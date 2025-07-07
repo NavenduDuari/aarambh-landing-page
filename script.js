@@ -44,29 +44,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Form submission handler
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('.contact-form form');
-    if (form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(form);
-            const data = {};
-            formData.forEach((value, key) => {
-                data[key] = value;
-            });
-            
-            // Here you would typically send the data to your server
-            // For now, we'll just show an alert
-            alert('Thank you for your message! We will get back to you soon.');
-            
-            // Reset form
-            form.reset();
-        });
-    }
-});
+// Form submission handler removed - no form present
 
 // Animate elements on scroll
 const observerOptions = {
